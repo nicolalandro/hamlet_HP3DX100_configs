@@ -13,7 +13,7 @@ Using te [old CURA version 13.06.4](https://github.com/Ultimaker/Cura/releases/t
 
 ## Cura 4.6.2 settings
 Start from the old version I create the new version configurations:
-* Starting fro Ultimaker printer config I modify as in figures
+* Starting from Ultimaker printer config I modify as in figures
 ![printer settings](CURA-4.6.2_printer_and_materials_config/printer_settings_1.png)
 ![nozel settings](CURA-4.6.2_printer_and_materials_config/printer_settings_2.png)
 * start gcode path: 'CURA-4.6.2_printer_and_materials_config/start_gcode.txt'
