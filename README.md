@@ -24,3 +24,6 @@ Start from the old version I create the new version configurations:
 * Also at "Extensions>Post Processing>Modify G-Code" add ```M566.*``` and check "Use Regular Expressions" 
 ![modify gcode post processing](CURA-4.6.2_printer_and_materials_config/printer_post_scripting.png)
 
+## Simplify3D
+In [this topic](https://www.stampa3d-forum.it/forum/topic/567-adattare-la-mia-hamlet/) I found a Simplify3D settings for Hamlet HP3DX100, and I store it at path 'Simplify3D/3dx100_v2.fff' because someties the post files disappear.
+
