@@ -2,16 +2,52 @@
 In this repository I put Cura and other slicers configs for hamlet 3D printer HP3DX100. 
 In order to use TPU material or with spools different from the original one I create also a Spool Holder and I put there the files.
 
+## Table of Contents  
+* [Slicers](#slicers)  
+  * [Cura](#cura)
+  * [Simplify3D](#simplify3d)
+* [Spool Holder](#spoon-holder)
+
+<a name="slicers">
 
 # Slicers
-This part is the result of [this topic](https://community.ultimaker.com/topic/33298-cura-all-layer-start-from-the-corner/?tab=comments#comment-268335).
+This part is the result of [this topic](https://community.ultimaker.com/topic/33298-cura-all-layer-start-from-the-corner/?tab=comments#comment-268335) and my experience.
 
-## Old cura settings
-Using te [old CURA version 13.06.4](https://github.com/Ultimaker/Cura/releases/tag/13.06.4) compiled by myself i create the standard configuration using [official instructions](http://www.hamletcom.com/media/67174/cura_setup.zip):
-* Generated file path: 'old_CURA-13.06.4_printer_config/hamlet.ini'
-* it is iportable as printer profile
 
-## Cura 4.6.2 settings
+<a name="cura">
+
+## Cura 4.13.1 settings
+
+Start from the old version I create the new version configurations:
+* Starting from Ultimaker printer config I modify as in figures
+
+<table border="0">
+ <tr>
+  <td>
+    <img src="CURA-4.13.1_printer_config/printer_settings_1.png" width=500/>
+  </td>
+  <td>
+    <img src="CURA-4.13.1_printer_config/printer_settings_2.png" width=500/>
+  </td>
+  </tr>
+    <tr>
+     <td>
+      <p style="text-align: center">Printer settings</p>
+     </td>
+     <td>
+      <p style="text-align: center">Printer settings Nozel</p>
+     </td>
+    </tr>
+</table>
+
+* start gcode path: 'CURA-4.6.2_printer_and_materials_config/start_gcode.txt'
+* end gcode path: 'CURA-4.6.2_printer_and_materials_config/end_gcode.txt'
+* Also at "Extensions>Post Processing>Modify G-Code" add ```M566.*``` and check "Use Regular Expressions" 
+
+<img src="CURA-4.6.2_printer_and_materials_config/printer_post_scripting.png" width=500/>
+
+
+## [OLD] Cura 4.6.2 settings
 Start from the old version I create the new version configurations:
 * Starting from Ultimaker printer config I modify as in figures
 
@@ -48,8 +84,17 @@ Start from the old version I create the new version configurations:
 
 <img src="CURA-4.6.2_printer_and_materials_config/printer_post_scripting.png" width=500/>
 
+## [Very OLD] CURA
+Using te [old CURA version 13.06.4](https://github.com/Ultimaker/Cura/releases/tag/13.06.4) compiled by myself i create the standard configuration using [official instructions](http://www.hamletcom.com/media/67174/cura_setup.zip):
+* Generated file path: 'old_CURA-13.06.4_printer_config/hamlet.ini'
+* it is iportable as printer profile
+
+<a name="simplify3d">
+
 ## Simplify3D
 In [this topic](https://www.stampa3d-forum.it/forum/topic/567-adattare-la-mia-hamlet/) I found a Simplify3D settings for Hamlet HP3DX100, and I store it at path 'Simplify3D/3dx100_v2.fff' because someties the post files disappear.
+
+<a name="spoon-holder">
 
 # Spool Holder
 To print TPU I create a new spool holder, starting from [this project](https://www.thingiverse.com/thing:2171625) and I create two pieces that I glued with hot glue. The file are in paths:
